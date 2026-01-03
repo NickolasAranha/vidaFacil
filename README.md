@@ -10,8 +10,11 @@ Este projeto foi desenvolvido como **Projeto de Curricularização** para a disc
 
 Para a modelagem e estruturação do sistema, utilizamos as seguintes tecnologias e ferramentas:
 
+- **Java** – Linguagem de programação utilizada como linguagem principal para implementar a lógica do sistema e a interface gráfica da aplicação (com a utilização do Swing como biblioteca gráfica e a ferramenta do WindowBuilder para facilitar a construção das telas).
+- **JDBC** – Tecnologia utlizada para realizar a conexão entre a aplicação Java e o banco de dados. 
 - **MySQL** – Sistema de Gerenciamento de Banco de Dados  
-- **SQL** – Linguagem para estruturação e scripts do banco  
+- **SQL** – Linguagem para estruturação e scripts do banco
+-- Ferramentas para a Documentação:
 - **BPMN** – Business Process Model and Notation para modelagem de processos de negócio  
 - **UML** – Unified Modeling Language para diagramas de Caso de Uso e Classes  
 
