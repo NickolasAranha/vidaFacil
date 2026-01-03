@@ -1,0 +1,13 @@
+
+VidaFacil/.project
+VidaFacil/.classpath
+VidaFacil/.settings/
+
+
+VidaFacil/bin/
+VidaFacil/*.class
+
+
+*.log
+*.tmp
+.DS_Store
