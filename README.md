@@ -16,7 +16,7 @@ A proposta central do projeto é promover a **autonomia e a qualidade de vida da
   &nbsp; <img src="telaCadastroMedicamento.png" alt="Exemplo de Alerta ou Cadastro" width="48%">
     <img src="printHistoricoMedicamentos.png" alt="Tela do Histórico de Medicamentos" width="48%">
     <img src="printSobrePerfil.png" alt="Tela de visualização do perfil" width="48%">
-    <img src="printAlerta.png.png" alt="Exemplo do Alerta" width="48%">
+    <img src="printAlerta.png" alt="Exemplo do Alerta" width="48%">
 
 </div>
 
