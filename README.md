@@ -12,7 +12,12 @@ A proposta central do projeto é promover a **autonomia e a qualidade de vida da
 
 <div align="center">
   <img src="printTelaPrincipal.png" alt="Tela Principal do Sistema" width="48%">
-  &nbsp; <img src="telaCadastroMedicamento.png" alt="Tela de Cadastro de Medicamento" width="48%">
+  &nbsp; <img src="telaCadastroMedicamento.png" alt="Exemplo de Alerta ou Cadastro" width="48%">
+  &nbsp; <img src="telaCadastroMedicamento.png" alt="Exemplo de Alerta ou Cadastro" width="48%">
+    <img src="printHistoricoMedicamentos.png" alt="Tela do Histórico de Medicamentos" width="48%">
+    <img src="printSobrePerfil.png" alt="Tela de visualização do perfil" width="48%">
+    <img src="printAlerta.png.png" alt="Exemplo do Alerta" width="48%">
+
 </div>
 
 <br> > *Acima: Telas do protótipo demonstrando a interface para o usuário final.*
