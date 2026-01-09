@@ -5,7 +5,7 @@ import java.sql.Connection;
 	public class BD {
 	    private static final String URL = "jdbc:mysql://localhost:3306/mydb?useTimezone=true&serverTimezone=UTC&useSSL=false";
 	    private static final String USUARIO = "root";
-	    private static final String SENHA = "kumo1964"; 
+	    private static final String SENHA = "";
 
 	    public Connection conectar() {
 	        Connection conexao = null;
