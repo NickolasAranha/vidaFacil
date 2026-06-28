@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidafacil.controller.CadastroController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="400.0">
+               <top>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0" style="-fx-background-color: #005088;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onVoltarClick" style="-fx-background-color: transparent;" text="←" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="welcomeText1" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="264.0" text="Cadastro" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding></HBox>
+               </top>
+               <center>
+                  <VBox spacing="20.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="5.0">
+                           <children>
+
+                              <Label fx:id="welcomeText" prefWidth="64.0" text="Nome:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNome" prefHeight="26.0" prefWidth="257.0" promptText="Insira seu nome aqui" style="-fx-background-radius: 5px;">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children></HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="6.0">
+                           <children>
+                              <Label fx:id="labelSenha" prefHeight="22.0" prefWidth="62.0" text="Senha:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="txtSenha" prefHeight="26.0" prefWidth="257.0" promptText="Insira sua senha aqui." style="-fx-background-radius: 5px;">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label fx:id="labelEmail" prefHeight="22.0" prefWidth="58.0" text="Email:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtEmail" minHeight="26.4" prefHeight="26.0" prefWidth="257.0" promptText="Insira seu email aqui." style="-fx-background-radius: 5px;">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children></HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="21.0">
+                           <children>
+                              <Label fx:id="labelCPF" prefHeight="22.0" prefWidth="47.0" text="CPF:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCPF" prefHeight="26.0" prefWidth="257.0" promptText="Insira seu CPF aqui." style="-fx-background-radius: 5px;">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label fx:id="labelData" prefHeight="22.0" prefWidth="186.0" text="Data de Nascimento:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dpDataNascimento" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 5px;" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="50.0" left="30.0" top="100.0" />
+                     </padding>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin></VBox>
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onSalvarClique" prefHeight="54.0" prefWidth="312.0" style="-fx-background-color: #005088; -fx-background-radius: 10px;" text="Finalizar Cadastro" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

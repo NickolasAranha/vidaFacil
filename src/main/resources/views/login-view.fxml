@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidafacil.controller.LoginController">
+   <center>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFF;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="548.0" prefWidth="400.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="300.0" text="LOGIN" textAlignment="CENTER" textFill="#005088">
+                     <font>
+                        <Font name="Arial Bold" size="40.0" />
+                     </font>
+                     <padding>
+                        <Insets top="50.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="355.0" spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="49.0" prefWidth="200.0" spacing="21.0" style="-fx-background-color: #ffff;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" text="Email:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtEmail" minHeight="30.4" prefHeight="26.0" prefWidth="253.0" promptText="Insira o seu e-mail" style="-fx-background-radius: 5px;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="49.0" prefWidth="300.0" spacing="15.0">
+                           <children>
+                              <Label text="Senha:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="pswSenha" minHeight="29.6" prefHeight="30.0" prefWidth="253.0" promptText="Insira a sua senha" style="-fx-background-radius: 5px;">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font></PasswordField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <Button fx:id="btnTentarLogar" mnemonicParsing="false" onAction="#onLogarClick" prefHeight="54.0" prefWidth="292.0" style="-fx-background-color: #005088; -fx-background-radius: 10px;" text="Logar" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#onCadastroClick" prefHeight="54.0" prefWidth="292.0" style="-fx-background-color: #005088; -fx-background-radius: 10px;" text="Cadastrar" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" top="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="403.0" spacing="15.0" style="-fx-background-color: #005088;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onVoltarClick" style="-fx-background-color: #005088;" text="←" textFill="#f7f7f7">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="15.0" />
+         </padding></HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="0.0" prefWidth="400.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

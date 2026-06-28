@@ -1,84 +1,75 @@
-# VidaFácil
+# Vida Fácil - V2 
 
-![Status](https://img.shields.io/badge/status-protótipo%20acadêmico-blue)
+![Status](https://img.shields.io/badge/status-Refatorado%20(V2)-success)
+![JavaFX](https://img.shields.io/badge/UI-JavaFX%20%7C%20SceneBuilder-blue)
+![Security](https://img.shields.io/badge/Security-jBCrypt-red)
 
-Este projeto foi desenvolvido como **Projeto de Curricularização** para a disciplina de **Sistemas de Informação**, com foco na aplicação prática dos conceitos de **Engenharia de Software**.
+Este repositório contém a **Versão 2.0 (Refatorada)** do projeto "Vida Fácil", um aplicativo de gerenciamento de medicamentos inicialmente desenvolvido como Projeto de Curricularização para a disciplina de Sistemas de Informação.
 
-A proposta central do projeto é promover a **autonomia e a qualidade de vida da pessoa idosa** através do gerenciamento organizado de medicamentos e hidratação.
-
----
-
-## Visualização do Projeto
-
-<div align="center">
-  <img src="printTelaPrincipal.png" alt="Tela Principal do Sistema" width="48%">
-  &nbsp; <img src="telaCadastroMedicamento.png" alt="Exemplo de Alerta ou Cadastro" width="48%">
-  &nbsp; <img src="telaCadastroMedicamento.png" alt="Exemplo de Alerta ou Cadastro" width="48%">
-    <img src="printHistoricoMedicamentos.png" alt="Tela do Histórico de Medicamentos" width="48%">
-    <img src="printSobrePerfil.png" alt="Tela de visualização do perfil" width="48%">
-    <img src="printAlerta.png" alt="Exemplo do Alerta" width="48%">
-
-</div>
-
-<br> > *Acima: Telas do protótipo demonstrando a interface para o usuário final.*
+A proposta central do projeto continua sendo promover a autonomia e a qualidade de vida da pessoa idosa através do gerenciamento organizado de medicamentos. No entanto, esta nova versão traz uma reestruturação completa da arquitetura, troca de tecnologias de interface, melhorias de segurança e um novo design focado na experiência do usuário.
 
 ---
 
-## Tecnologias e Ferramentas
+## Funcionalidades Principais
 
-Para a modelagem e estruturação do sistema, utilizamos as seguintes tecnologias e ferramentas:
+O gerenciamento manual de medicamentos, frequentemente feito em papel ou dependendo apenas da memória, apresenta falhas que podem resultar em esquecimentos ou dosagens incorretas. O **Vida Fácil** atua diretamente nesse problema, oferecendo:
 
-- **MySQL** – Sistema de Gerenciamento de Banco de Dados
-- **SQL** – Linguagem para estruturação e scripts do banco
-- **BPMN** – Business Process Model and Notation para modelagem de processos de negócio
-- **UML** – Unified Modeling Language para diagramas de Caso de Uso e Classes
-
----
-
-## Estrutura de Dados
-
-O banco de dados foi modelado para suportar as regras de negócio do sistema, contando com as seguintes tabelas principais:
-
-- **Idoso e Cuidador**: Armazenamento de dados pessoais e vínculos de responsabilidade.
-- **Medicamento**: Registro de medicamentos, dosagens, unidades de medida e intervalos de administração.
-- **Meta_Diaria e Registro_Consumo**: Controle personalizado de hidratação e histórico de ingestão.
-- **Alertas**: Controle de status e agendamento de notificações relacionadas a medicamentos e consumo de água.
+* **Autenticação Segura:** Cadastro e login de usuários protegidos por criptografia para garantir a privacidade dos dados médicos.
+* **Gestão de Medicamentos:** Cadastro detalhado de remédios, permitindo registrar o nome, a dosagem exata e a frequência de uso.
+* **Monitoramento e Listagem:** Uma interface clara onde o usuário pode visualizar rapidamente todos os medicamentos em uso e suas respectivas rotinas.
+* **Foco na Acessibilidade:** Design simplificado e vertical (formato mobile), pensado para facilitar a navegação por pessoas com pouca familiaridade tecnológica.
 
 ---
 
-## Ideia e Conceito do Projeto
+## O que mudou na V2? (Refatoração)
 
-O gerenciamento manual de medicamentos e hidratação — frequentemente realizado por meio de anotações em papel ou apenas pela memória — apresenta falhas significativas, podendo resultar em esquecimentos ou dosagens incorretas.
+O projeto original cumpriu seu papel acadêmico, mas precisava de uma base mais sólida, moderna e escalável. As principais mudanças desta versão incluem:
 
-O **VidaFácil** foi concebido para mitigar esses problemas por meio de uma interface acessível, substituindo o controle manual por um sistema organizado de **alertas automáticos** e **registros históricos**, garantindo maior segurança e acompanhamento contínuo.
-
----
-
-## Funcionalidades do Escopo
-
-As principais funcionalidades previstas para o projeto incluem:
-
-- **Gestão de Medicamentos**: Cadastro completo de medicamentos, incluindo dosagens e horários de administração.
-- **Controle de Hidratação**: Definição de metas diárias personalizadas de consumo de água.
-- **Sistema de Alertas**: Notificações visuais e sonoras para auxiliar o usuário no cumprimento das rotinas.
-- **Histórico de Adesão**: Registro detalhado do consumo de água e medicamentos para fins de acompanhamento.
-- **Vínculo de Cuidadores**: Estrutura de dados preparada para suportar a relação entre paciente e responsável, com possibilidade de interação remota em versões futuras.
+* **Gerenciamento de Dependências:** Adoção do **Maven** para facilitar a compilação e o gerenciamento de bibliotecas externas.
+* **Nova Interface Gráfica (UI):** Substituição do antigo Java Swing por **JavaFX** integrado com o **SceneBuilder**.
+* **Redesign e Layout Mobile:** A interface desktop antiga (tons verdes) foi totalmente redesenhada para um formato "mobile-first" vertical, adotando uma identidade visual mais limpa e moderna com tons de azul.
+* **Arquitetura Limpa:** O código foi reorganizado em uma estrutura de pacotes bem definida (MVC/Camadas), separando responsabilidades em `application`, `controller`, `database`, `model`, `services` e `utils`.
+* **Foco no Core Business:** Funcionalidades secundárias da versão antiga (como a parte de hidratação/metas diárias) e a integração de **Cuidadores** não foram implementadas nesta etapa. O foco foi direcionado inteiramente para garantir a excelência e o funcionamento da funcionalidade principal: o monitoramento e gerenciamento de remédios para o usuário final.
 
 ---
 
-## Status Atual e Observações
+## Segurança Adicional (jBCrypt)
 
-O projeto encontra-se atualmente em fase de **Protótipo Acadêmico**.
+Uma das grandes novidades desta versão é a preocupação com a segurança dos dados. O projeto agora conta com a biblioteca **`org.mindrot.jbcrypt.BCrypt`** para realizar o *hash* e *salt* das senhas dos usuários antes de salvá-las, garantindo que nenhuma credencial fique exposta em texto plano no banco de dados.
 
-- Embora a estrutura de dados (Backend/DB) suporte a interação completa entre **Idoso** e **Cuidador**, a interface desenvolvida neste estágio prioriza exclusivamente a experiência do usuário final (idoso).
+---
+
+## Estratégia de Banco de Dados
+
+### Cenário Atual (V2)
+
+O banco de dados MySQL original em nuvem foi substituído pelo **SQLite**. Os dados agora são salvos localmente em arquivos. Essa decisão arquitetural foi tomada para agilizar os testes e o desenvolvimento, eliminando a necessidade de configurar conexões externas e depender de internet durante a codificação.
+
+### Roadmap e Futuro (V3)
+
+O objetivo futuro é implementar um sistema de **duas camadas de dados (Offline-First / Sync):**
+
+1. Utilizar o banco de dados **H2** embarcado para armazenamento rápido no PC/Local.
+2. Criar uma rotina de sincronização que enviará os dados armazenados localmente para um **Banco de Dados na Nuvem** sempre que houver conexão disponível.
+
+---
+
+## Tecnologias Utilizadas
+
+* **Java** (Linguagem principal)
+* **JavaFX & SceneBuilder** (Construção da Interface Gráfica)
+* **Maven** (Automação e Gerenciamento de Dependências)
+* **SQLite** (Banco de dados relacional local)
+* **jBCrypt** (Criptografia de senhas)
 
 ---
 
 ## Desenvolvedores
 
-Projeto desenvolvido por:
+O projeto original e toda a sua refatoração para a versão 2.0 foram desenvolvidos em conjunto pela seguinte equipe:
 
-- **Caio Henrique Felix dos Reis Lopes**
-- **Maria Eduarda Ferreira Santos**
-- **Miguel dos Santos Conforte**
-- **Nickolas Aranha Martinez**
+* Caio Henrique Felix dos Reis Lopes
+* Maria Eduarda Ferreira Santos
+* Miguel dos Santos Conforte
+* Nickolas Aranha Martinez
+* Nicolas Yuji Hiratani

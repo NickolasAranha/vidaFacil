@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidafacil.controller.MenuController">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #FFFF;">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="400.0">
+               <center>
+                  <VBox spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="349.0" text="VIDA FÁCIL" textFill="#005088">
+                           <font>
+                              <Font name="Arial Bold" size="53.0" />
+                           </font>
+                        </Label>
+                        <VBox spacing="30.0">
+                           <children>
+                              <VBox prefWidth="300.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Já possui um login?" textFill="#005088">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="btnIrLogin" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="54.0" prefWidth="292.0" style="-fx-background-color: #005088; -fx-background-radius: 10px;" text="Login" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefWidth="300.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Não possui um registro?" textFill="#005088">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="btnIrCadastro" mnemonicParsing="false" onAction="#onCadastroClick" prefHeight="54.0" prefWidth="292.0" style="-fx-background-color: #005088; -fx-background-radius: 10px;" text="Cadastrar-se" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="130.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </padding></VBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding></HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

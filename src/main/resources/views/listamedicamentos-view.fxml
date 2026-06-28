@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidafacil.controller.ListaMedicamentosController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="60.0" spacing="20.0" style="-fx-background-color: #005088;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onVoltarClick" style="-fx-background-color: transparent; -fx-text-fill: white;" text="←">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Label text="Meus Medicamentos" textAlignment="CENTER" textFill="white">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+                </Label>
+            </children>
+            <padding>
+                <Insets left="15.0" />
+            </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: #f4f4f4;" BorderPane.alignment="CENTER">
+            <content>
+                <VBox fx:id="vboxLista" spacing="15.0" style="-fx-background-color: #f4f4f4;">
+                    <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

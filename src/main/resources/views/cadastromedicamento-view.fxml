@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidafacil.controller.CadastroMedicamentoController">
+
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0" style="-fx-background-color: #005088;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onVoltarClick" style="-fx-background-color: transparent; -fx-text-fill: white;" text="←">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="264.0" style="-fx-text-fill: white; -fx-font-weight: bold;" text="Cadastro de Medicamento" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </top>
+
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: #ffff;" BorderPane.alignment="CENTER">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="454.0" prefWidth="340.0" spacing="25.0" style="-fx-background-color: #ffff;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+               </padding>
+               <children>
+                  <VBox spacing="5.0" style="-fx-background-color: #ffff;">
+                     <children>
+                        <Label prefWidth="75.0" text="Nome:">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="txtNome" promptText="EX: Dipirona" style="-fx-background-radius: 5px;">
+                           <font>
+                              <Font size="14.0" />
+                           </font></TextField>
+                     </children>
+                  </VBox>
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="338.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="96.0" text="Dosagem:">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font></Label>
+                        <TextField fx:id="txtDosagem" prefHeight="30.0" prefWidth="83.0" promptText="EX: 500" style="-fx-background-radius: 5px;">
+                           <font>
+                              <Font size="14.0" />
+                           </font></TextField>
+                        <Label prefHeight="20.0" prefWidth="66.0" text="Medida:">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font></Label>
+                        <ComboBox fx:id="cbMedida" prefHeight="26.0" prefWidth="103.0" style="-fx-background-radius: 5px;" />
+                     </children>
+                  </HBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="180.0" text="Frequência (em horas):">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+      
+                        <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="317.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="txtFrequencia" prefHeight="30.0" prefWidth="77.0" promptText="EX: 12" style="-fx-background-radius: 5px;">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="113.0" text="Data de Início:">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+      
+                        <HBox alignment="CENTER_LEFT" spacing="12.0">
+                           <children>
+                              <DatePicker fx:id="dpDataInicio" prefHeight="26.0" prefWidth="106.0" style="-fx-background-radius: 5px;" />
+                              <Label alignment="CENTER" prefHeight="20.0" prefWidth="21.0" text="às">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cbHora" prefHeight="26.0" prefWidth="70.0" style="-fx-background-radius: 5px;" />
+                              <Label graphicTextGap="3.0" prefHeight="11.0" prefWidth="0.0" text=":">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cbMinuto" prefHeight="26.0" prefWidth="70.0" style="-fx-background-radius: 5px;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="141.0" text="Data de Término:">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+      
+                        <HBox alignment="CENTER_LEFT" spacing="50.0">
+                           <children>
+                              <DatePicker fx:id="dpDataFim" prefHeight="26.0" prefWidth="106.0" />
+                              <CheckBox fx:id="chkUsoContinuo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="22.0" prefWidth="172.0" text="Uso Continuo?" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </CheckBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="401.0" style="-fx-background-color: #ffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onCadastrarMedicamentoClick" prefHeight="54.0" prefWidth="312.0" style="-fx-background-radius: 10px; -fx-background-color: #005088;" text="Cadastrar" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

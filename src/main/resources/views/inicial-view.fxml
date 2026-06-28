@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidafacil.controller.InicialController">
+   <children>
+      <Label fx:id="lblBoasVindas" alignment="CENTER" layoutX="50.0" layoutY="88.0" prefWidth="300.0" text="Bem-vindo(a)! *usuário*" textAlignment="JUSTIFY" textFill="#005088" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font></Label>
+      <Button layoutX="44.0" layoutY="300.0" mnemonicParsing="false" onAction="#onIrTelaCadastroMedClick" prefHeight="54.0" prefWidth="312.0" style="-fx-background-color: #005088; -fx-background-radius: 10px;" text="Cadastrar Medicamento" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="44.0" layoutY="374.0" mnemonicParsing="false" onAction="#onIrListaMedClick" prefHeight="54.0" prefWidth="312.0" style="-fx-background-color: #005088; -fx-background-radius: 10px;" text="Listar Medicamentos" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="102.0" layoutY="259.0" text="O que gostaria de fazer hoje?">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
