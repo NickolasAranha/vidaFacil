@@ -37,9 +37,9 @@ Para suportar o funcionamento da aplicação de forma ágil e segura, o sistema 
 Abaixo estão algumas telas do funcionamento do sistema:
 
 
-| Login / Inicial | Menu Principal | Cadastro de Usuário |
-| :---: | :---: | :---: |
-| ![Tela Inicial](docs/imagens/tela-inicial.png) | ![Tela Menu](docs/imagens/tela-menupng.png) | ![Tela Cadastro](docs/imagens/tela-cadastro.png) |
+|                Login / Inicial                 |               Menu Principal                | Cadastro de Usuário |
+|:----------------------------------------------:|:-------------------------------------------:| :---: |
+| ![Tela Inicial](docs/imagens/tela-menupng.png) | ![Tela Menu](docs/imagens/tela-inicial.png) | ![Tela Cadastro](docs/imagens/tela-cadastro.png) |
 
 | Meus Medicamentos | Cadastrar Medicamento |
 | :---: | :---: |
