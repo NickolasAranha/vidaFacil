@@ -5,7 +5,7 @@
 
 O **Vida Fácil** é um aplicativo de gerenciamento de medicamentos focado em promover a autonomia, segurança e qualidade de vida da pessoa idosa.
 
-Este projeto nasceu inicialmente como uma proposta de curricularização integrando três disciplinas acadêmicas (Sistemas de Informação, Linguagem de Programação e Engenharia de Software 1). No semestre seguinte, o projeto foi totalmente refeito para consolidar uma base arquitetural sólida, moderna e focada na excelência da experiência do usuário.
+Este projeto nasceu inicialmente como uma proposta de curricularização integrando três disciplinas acadêmicas (Sistemas de Informação, Linguagem de Programação e Engenharia de Software 1. No semestre seguinte, o projeto foi totalmente refeito para a matéria de Engenharia de Software 2 como forma de consolidar uma base arquitetural sólida, moderna e focada na excelência da experiência do usuário.
 
 ---
 
