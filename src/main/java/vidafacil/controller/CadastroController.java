@@ -49,6 +49,7 @@ public class CadastroController {
             if (nome.trim().isEmpty()) {
                 throw new RuntimeException("O campo Nome está vazio!");
             }
+            nome = nome.substring(0, 1).toUpperCase() + nome.substring(1).toLowerCase();
 
             if (senha.trim().isEmpty()) {
                 throw new RuntimeException("O campo Senha está vazio!");
@@ -58,15 +59,22 @@ public class CadastroController {
 
             if (email.trim().isEmpty()) {
                 throw new RuntimeException("O campo Email está vazio!");
+            } else if (!email.contains("@")) {
+                throw new RuntimeException("Email inválido!");
             }
 
-            if(cpf.isEmpty()) {
+            if(cpf.trim().isEmpty()) {
                 throw new RuntimeException("O campo CPF está vazio!");
+            } else if (cpf.length() != 11) {
+                throw new RuntimeException("CPF invalido!");
             }
-
+            
             if (dataNascimento == null) {
                 throw new RuntimeException("O campo Data de Nascimento está vazio!");
+            } else if (dataNascimento.isAfter(LocalDate.now())) {
+                throw new RuntimeException("Data de nascimento inválida!");
             }
+
 
             Idoso idoso = new Idoso(nome, senhaCriptografada, email, cpf, dataNascimento);
             dao.cadastrarIdoso(idoso);

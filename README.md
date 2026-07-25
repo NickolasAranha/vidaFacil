@@ -5,7 +5,7 @@
 
 O **Vida Fácil** é um aplicativo de gerenciamento de medicamentos focado em promover a autonomia, segurança e qualidade de vida da pessoa idosa.
 
-Este projeto nasceu inicialmente como uma proposta de curricularização integrando três disciplinas acadêmicas (Sistemas de Informação, Linguagem de Programação e Engenharia de Software 1. No semestre seguinte, o projeto foi totalmente refeito para a matéria de Engenharia de Software 2 como forma de consolidar uma base arquitetural sólida, moderna e focada na excelência da experiência do usuário.
+Este projeto nasceu inicialmente como uma proposta de curricularização integrando três disciplinas acadêmicas (Sistemas de Informação, Linguagem de Programação e Engenharia de Software 1). No semestre seguinte, o projeto foi totalmente refeito para a matéria de Engenharia de Software 2 como forma de consolidar uma base arquitetural sólida, moderna e focada na excelência da experiência do usuário.
 
 ---
 
@@ -36,14 +36,13 @@ Para suportar o funcionamento da aplicação de forma ágil e segura, o sistema 
 
 Abaixo estão algumas telas do funcionamento do sistema:
 
+| Tela Inicial |               Cadastro de Usuário                |               Tela de Login                |
+| :---: |:------------------------------------------------:|:------------------------------------------:|
+| ![Tela Inicial](docs/imagens/tela-inicial.png) | ![Tela Cadastro](docs/imagens/tela-cadastro.png) | ![Tela Login](docs/imagens/tela-login.png) |
 
-|                Login / Inicial                 |               Menu Principal                | Cadastro de Usuário |
-|:----------------------------------------------:|:-------------------------------------------:| :---: |
-| ![Tela Inicial](docs/imagens/tela-menupng.png) | ![Tela Menu](docs/imagens/tela-inicial.png) | ![Tela Cadastro](docs/imagens/tela-cadastro.png) |
-
-| Meus Medicamentos | Cadastrar Medicamento |
-| :---: | :---: |
-| ![Tela Medicamentos](docs/imagens/tela-medicamentos.png) | ![Cadastro Medicamentos](docs/imagens/tela-cadastromedicamentos.png) |
+| Menu Principal | Meus Medicamentos | Cadastrar Medicamento |
+| :---: | :---: | :---: |
+| ![Tela Menu](docs/imagens/tela-menu.png) | ![Tela Medicamentos](docs/imagens/tela-medicamentos.png) | ![Cadastro Medicamentos](docs/imagens/tela-cadastromedicamentos.png) |
 
 ---
 
@@ -62,6 +61,7 @@ O aplicativo continuará em evolução para agregar ainda mais valor ao bem-esta
 Projeto desenvolvido em conjunto pela equipe:
 
 * Caio Henrique Felix dos Reis Lopes
+* Fernando Freire Oliveira
 * Maria Eduarda Ferreira Santos
 * Miguel dos Santos Conforte
 * Nickolas Aranha Martinez
